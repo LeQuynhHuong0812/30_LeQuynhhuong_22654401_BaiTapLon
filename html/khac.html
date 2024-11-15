@@ -1,0 +1,385 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="author" content="Untree.co">
+    <link rel="shortcut icon" href="favicon.png">
+
+    <meta name="description" content="" />
+    <meta name="keywords" content="bootstrap, bootstrap4" />
+
+    <!-- Bootstrap CSS -->
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link href="/css/tiny-slider.css" rel="stylesheet">
+    <link href="/css/style.css" rel="stylesheet">
+    <title>Các sản phẩm khác của QH store </title>
+    <style>
+    #searchForm {
+    max-width: 80%;
+    }
+    
+    #searchInput {
+    padding: 0.5rem;
+    }
+    
+    .btn-outline-success {
+    color: #28a745;
+    border-color: #28a745;
+    }
+    
+    .btn-outline-success:hover {
+    background-color: #28a745;
+    color: #fff;
+    }
+    </style>
+</head>
+
+<body>
+
+    <!-- Start Header/Navigation -->
+    <nav class="custom-navbar navbar navbar-expand-md navbar-dark bg-dark" arial-label="Furni navigation bar">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">QH store<span>.</span></a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsFurni"
+                aria-controls="navbarsFurni" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarsFurni">
+                <ul class="custom-navbar-nav navbar-nav ms-auto mb-2 mb-md-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="shop.html" id="shopDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">Shop</a>
+                        <ul class="dropdown-menu" aria-labelledby="shopDropdown">
+                            <li><a class="dropdown-item filter-option" href="shop.html" data-category="all">Tất cả sản
+                                    phẩm</a></li>
+                            <li><a class="dropdown-item filter-option" href="but.html" data-category="pens">Bút</a></li>
+                            <li><a class="dropdown-item filter-option" href="sach.html" data-category="books">Sách</a>
+                            </li>
+                            <li><a class="dropdown-item filter-option" href="kep.html" data-category="keep">Kẹp</a></li>
+                            <li><a class="dropdown-item filter-option" href="#" data-category="defferent">Khác</a></li>
+                        </ul>
+                    </li>
+                    <li><a class="nav-link" href="about.html">About us</a></li>
+                    <li><a class="nav-link" href="services.html">Services</a></li>
+                    <li><a class="nav-link" href="blog.html">Blog</a></li>
+                    <li><a class="nav-link" href="contact.html">Contact us</a></li>
+                </ul>
+
+                <ul class="custom-navbar-cta navbar-nav mb-2 mb-md-0 ms-5">
+                    <li><a class="nav-link" href="login.html"><img src="/images/user.svg"></a></li>
+                    <li><a class="nav-link" href=""><img src="/images/cart.svg"></a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- End Header/Navigation -->
+
+    <!-- Start Hero Section -->
+    <div class="hero">
+        <div class="container">
+            <div class="row justify-content-between align-items-center">
+                <div class="col-lg-5">
+                    <div class="intro-excerpt">
+                        <h1>The perfect choice <span class="d-block">for you</span></h1>
+                        <p class="mb-4">Chất lượng hàng đầu – Dịch vụ tận tâm – Đối tác đáng tin cậy cho mọi nhu cầu văn
+                            phòng phẩm của bạn.</p>
+                        <p>
+                            <a href="index.html" class="btn btn-secondary me-2">Shop Now</a>
+                            <a href="shop.html" class="btn btn-white-outline">Explore</a>
+                        </p>
+                        <!-- Thanh tìm kiếm -->
+                        <form id="searchForm" action="#" method="GET" class="d-flex mt-3" style="width: 100%;">
+                            <input id="searchInput" class="form-control me-2" type="search"
+                                placeholder="Tìm kiếm sản phẩm..." aria-label="Search">
+                            <button class="btn btn-outline-success" type="submit">
+                                <i class="fas fa-search"></i>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-lg-7">
+                    <div class="hero-img-wrap">
+                        <img src="/images/img-bgindex.png" class="img-fluid" alt="Hero Image">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Hero Section -->
+
+    <!-- Start Product Section -->
+    <div class="untree_co-section product-section before-footer-section">
+        <div class="container">
+            <div class="row" id="productContainer">
+                <!-- Product 8-->
+                <div class="col-12 col-md-6 col-lg-3 mb-5 product-item" data-title="Kéo cắt giấy" data-price="$12"
+                    data-category="defferent" data-stock="9999">
+                    <a class="product-item product-link" href="#" data-bs-toggle="modal" data-bs-target="#productInfoModal">
+                        <img src="/images/keo.jpg" class="img-fluid product-thumbnail product-img">
+                        <h3 class="product-title">Kéo cắt giấy</h3>
+                        <strong class="product-price">$12</strong>
+                        <a href="pd9.html" class="btn">Details</a>
+                    </a>
+                
+                </div>
+                <!-- Product 9 -->
+                <div class="col-12 col-md-6 col-lg-3 mb-5 product-item" data-title="Thước dẻo thiên long" data-price="$4"
+                    data-category="defferent" data-stock="9999">
+                    <a class="product-item product-link" href="#" data-bs-toggle="modal" data-bs-target="#productInfoModal">
+                        <img src="/images/thuocdeothienlong.jpg" class="img-fluid product-thumbnail product-img">
+                        <h3 class="product-title">Thước dẻo thiên long</h3>
+                        <strong class="product-price">$2</strong>
+                        <a href="pd10.html" class="btn">Details</a>
+                    </a>
+                
+                </div>
+
+                <!-- Product 10 -->
+                <div class="col-12 col-md-6 col-lg-3 mb-5 product-item" data-title="Thước kẻ 15cm" data-price="$7"
+                    data-category="defferent" data-stock="9999">
+                    <a class="product-item product-link" href="#" data-bs-toggle="modal" data-bs-target="#productInfoModal">
+                        <img src="/images/thuocke15cm.jpg" class="img-fluid product-thumbnail product-img">
+                        <h3 class="product-title">Thước kẻ 15cm</h3>
+                        <strong class="product-price">$2</strong>
+                        <a href="pd11.html" class="btn">Details</a>
+                    </a>
+                
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Product Section -->
+
+    <!-- Modal -->
+    <div class="modal fade" id="productInfoModal" tabindex="-1" aria-labelledby="productInfoModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="productInfoModalLabel">Chi tiết sản phẩm</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <!-- Hình ảnh sản phẩm -->
+                    <img id="productModalImage" src="" alt="Product Image" class="img-fluid mb-3">
+    
+                    <!-- Thông tin chi tiết sản phẩm -->
+                    <h5 id="productModalTitle"></h5>
+                    <p id="productModalPrice"></p>
+                    <p id="productModalCategory"></p>
+                    <p id="productModalStock"></p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" id="addToCartBtn">
+                        <i class="fas fa-shopping-cart"></i> Thêm vào giỏ hàng
+                    </button>
+                    <!-- Nút mua ngay -->
+                    <button type="button" class="btn btn-primary" id="buyNowBtn">
+                        <i class="fas fa-shopping-bag"></i> Mua ngay
+                    </button>
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Đóng</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Start Footer Section -->
+    <footer class="footer-section">
+        <div class="container relative">
+
+            <div class="sofa-img">
+                <img src="/images/sofa.png" alt="Image" class="img-fluid">
+            </div>
+
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="subscription-form">
+                        <h3 class="d-flex align-items-center"><span class="me-1"><img src="/images/envelope-outline.svg"
+                                    alt="Image" class="img-fluid"></span><span>Subscribe to Newsletter</span></h3>
+
+                        <form action="#" class="row g-3">
+                            <div class="col-auto">
+                                <input type="text" class="form-control" placeholder="Enter your name">
+                            </div>
+                            <div class="col-auto">
+                                <input type="email" class="form-control" placeholder="Enter your email">
+                            </div>
+                            <div class="col-auto">
+                                <button class="btn btn-primary">
+                                    <span class="fa fa-paper-plane"></span>
+                                </button>
+                            </div>
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="row g-5 mb-5">
+                <div class="col-lg-4">
+                    <div class="mb-4 footer-logo-wrap"><a href="#" class="footer-logo">Furni<span>.</span></a></div>
+                    <p class="mb-4">Mang đến cho bạn sự tiện lợi và niềm vui mua sắm, với những sản phẩm chất lượng và
+                        dịch vụ tận tâm, chúng tôi luôn đồng
+                        hành cùng bạn trên hành trình hoàn thiện không gian làm việc</p>
+
+                    <ul class="list-unstyled custom-social">
+                        <li><a href="https://www.facebook.com/duong10032004?locale=vi_VN"><span
+                                    class="fa fa-brands fa-facebook-f"></span></a></li>
+                        <li><a href="https://x.com/MinhDng621473"><span class="fa fa-brands fa-twitter"></span></a></li>
+                        <li><a href="https://www.instagram.com/minzduowg_04/"><span
+                                    class="fa fa-brands fa-instagram"></span></a></li>
+                        <li><a
+                                href="https://www.linkedin.com/in/%C4%91%E1%BB%97-minh-d%C6%B0%C6%A1ng-%C4%91%E1%BB%97-a31825328/"><span
+                                    class="fa fa-brands fa-linkedin"></span></a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-8">
+                    <div class="row links-wrap">
+                        <div class="col-6 col-sm-6 col-md-3">
+                            <ul class="list-unstyled">
+                                <li><a href="about.html">About us</a></li>
+                                <li><a href="services.html">Services</a></li>
+                                <li><a href="blog.html">Blog</a></li>
+                                <li><a href="contact.html">Contact us</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="col-6 col-sm-6 col-md-3">
+                            <ul class="list-unstyled">
+                                <li><a href="#">Support</a></li>
+                                <li><a href="#">Knowledge base</a></li>
+                                <li><a href="#">Live chat</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="col-6 col-sm-6 col-md-3">
+                            <ul class="list-unstyled">
+                                <li><a href="#">Jobs</a></li>
+                                <li><a href="#">Our team</a></li>
+                                <li><a href="#">Leadership</a></li>
+                                <li><a href="#">Privacy Policy</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="col-6 col-sm-6 col-md-3">
+                            <ul class="list-unstyled">
+                                <li><a href="#">Nordic Chair</a></li>
+                                <li><a href="#">Kruzo Aero</a></li>
+                                <li><a href="#">Ergonomic Chair</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="border-top copyright">
+                <div class="row pt-4">
+                    <div class="col-lg-6">
+                        <p class="mb-2 text-center text-lg-start">QH store . Hân hạnh được phục vụ quý khách <a
+                                href="https://www.facebook.com/duong10032004?locale=vi_VN"><span
+                                    class="fa fa-brands fa-facebook-f"></span></a>
+                        </p>
+                    </div>
+
+
+
+                </div>
+            </div>
+
+        </div>
+    </footer>
+    <!-- End Footer Section -->
+<script>
+    document.getElementById('searchForm').addEventListener('submit', function (event) {
+        event.preventDefault(); // Ngăn chặn hành động submit form mặc định
+
+        // Lấy giá trị tìm kiếm từ thanh input
+        let searchValue = document.getElementById('searchInput').value.toLowerCase().trim();
+
+        // Lấy tất cả các sản phẩm
+        let products = document.querySelectorAll('.product-item');
+
+        // Kiểm tra nếu ô tìm kiếm rỗng, hiển thị tất cả sản phẩm
+        if (searchValue === "") {
+            products.forEach(function (product) {
+                product.style.display = ''; // Hiển thị tất cả sản phẩm
+            });
+        } else {
+            // Lọc sản phẩm theo từ khóa tìm kiếm
+            products.forEach(function (product) {
+                let productTitle = product.getAttribute('data-title').toLowerCase().trim();
+
+                // Kiểm tra xem tiêu đề sản phẩm có khớp chính xác với từ khóa tìm kiếm
+                if (productTitle.includes(searchValue)) {
+                    product.style.display = ''; // Hiển thị sản phẩm khớp
+                } else {
+                    product.style.display = 'none'; // Ẩn sản phẩm không khớp
+                }
+            });
+        }
+    });
+
+    document.querySelectorAll('.product-item').forEach(function (product) {
+        product.addEventListener('click', function () {
+            // Lấy thông tin sản phẩm từ thuộc tính data
+            let productTitle = product.getAttribute('data-title');
+            let productPrice = product.getAttribute('data-price');
+            let productCategory = product.getAttribute('data-category');
+            let productStock = product.getAttribute('data-stock'); // Lấy số lượng tồn kho
+
+            // Cập nhật modal với thông tin sản phẩm
+            document.getElementById('productModalTitle').textContent = productTitle;
+            document.getElementById('productModalPrice').textContent = `Giá: ${productPrice}`;
+            document.getElementById('productModalCategory').textContent = `Danh mục: ${productCategory}`;
+            document.getElementById('productModalStock').textContent = `Tồn kho: ${productStock}`; // Hiển thị tồn kho
+
+            // Cập nhật hình ảnh sản phẩm
+            let productImageSrc = product.querySelector('.product-img').getAttribute('src');
+            document.getElementById('productModalImage').setAttribute('src', productImageSrc);
+        });
+    });
+
+    document.getElementById('addToCartBtn').addEventListener('click', function () {
+        alert('Sản phẩm đã được thêm vào giỏ hàng!');
+    });
+
+    document.getElementById('buyNowBtn').addEventListener('click', function () {
+        alert('Bạn sẽ được chuyển đến trang thanh toán!');
+        // Điều hướng tới trang thanh toán hoặc thêm logic xử lý tại đây
+    });
+    document.getElementById('buyNowBtn').addEventListener('click', function () {
+        // Lấy thông tin sản phẩm từ modal
+        let product = {
+            title: document.getElementById('productModalTitle').textContent,
+            price: parseFloat(document.getElementById('productModalPrice').textContent.replace('Giá: ', '').replace('$', '')), // Chỉ lấy số, bỏ ký tự $
+            category: document.getElementById('productModalCategory').textContent,
+            stock: document.getElementById('productModalStock').textContent,
+            image: document.getElementById('productModalImage').getAttribute('src'),
+            quantity: 1 // Mặc định số lượng là 1
+        };
+
+        // Lưu sản phẩm vào localStorage
+        let cart = JSON.parse(localStorage.getItem('cart')) || [];
+        cart.push(product);
+        localStorage.setItem('cart', JSON.stringify(cart));
+
+        // Chuyển hướng đến trang thanh toán
+        window.location.href = 'muahang.html';
+    });
+
+</script>
+    <script src="/js/bootstrap.bundle.min.js"></script>
+    <script src="/js/tiny-slider.js"></script>
+    <script src="/js/custom.js"></script>
+</body>
+
+</html>

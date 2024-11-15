@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="author" content="Untree.co">
+    <link rel="shortcut icon" href="favicon.png">
+    <meta name="description" content="" />
+    <meta name="keywords" content="bootstrap, bootstrap4" />
+
+    <!-- Bootstrap CSS -->
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link href="/css/tiny-slider.css" rel="stylesheet">
+    <link href="/css/style.css" rel="stylesheet">
+    <title>QH store</title>
+</head>
+
+<body>
+
+    <!-- Start Header/Navigation -->
+    <nav class="custom-navbar navbar navbar-expand-md navbar-dark bg-dark" arial-label="Furni navigation bar">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">QH store<span>.</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsFurni"
+                aria-controls="navbarsFurni" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarsFurni">
+                <ul class="custom-navbar-nav navbar-nav ms-auto mb-2 mb-md-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li><a class="nav-link" href="shop.html">Shop</a></li>
+                    <li><a class="nav-link" href="about.html">About us</a></li>
+                    <li><a class="nav-link" href="services.html">Services</a></li>
+                    <li><a class="nav-link" href="blog.html">Blog</a></li>
+                    <li><a class="nav-link" href="contact.html">Contact us</a></li>
+                </ul>
+                <ul class="custom-navbar-cta navbar-nav mb-2 mb-md-0 ms-5">
+                    <li><a class="nav-link" href="#" id="logout-btn" style="display: none;"><img
+                                src="/images/logout.svg"> Đăng xuất</a></li>
+                    <li><a class="nav-link" href=""><img src="/images/cart.svg"></a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- End Header/Navigation -->
+
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-6 col-lg-4">
+                <!-- Login Form -->
+                <form class="form-container" id="login-form">
+                    <h4 class="text-center mb-4">Login</h4>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email address</label>
+                        <input type="email" class="form-control" id="email" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="password" class="form-label">Password</label>
+                        <input type="password" class="form-control" id="password" required>
+                    </div>
+                    <div id="message"></div>
+                    <div class="d-grid gap-2">
+                        <button type="submit" class="btn btn-primary">Login</button>
+                        <button type="button" class="btn btn-secondary" id="show-register-form">Register</button>
+                    </div>
+                </form>
+    
+                <!-- Register Form -->
+                <form class="form-container mt-5" id="register-form" style="display:none;">
+                    <h4 class="text-center mb-4">Register</h4>
+                    <div class="mb-3">
+                        <label for="username-register" class="form-label">Username</label>
+                        <input type="text" class="form-control" id="username-register" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email-register" class="form-label">Email address</label>
+                        <input type="email" class="form-control" id="email-register" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="password-register" class="form-label">Password</label>
+                        <input type="password" class="form-control" id="password-register" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="password-confirm" class="form-label">Confirm Password</label>
+                        <input type="password" class="form-control" id="password-confirm" required>
+                    </div>
+                    <div id="message1"></div>
+                    <div class="d-grid gap-2">
+                        <button type="submit" class="btn btn-primary">Register</button>
+                        <button type="button" class="btn btn-secondary" id="show-login-form">Login</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+<div class="border-top copyright">
+    
+    <div class="row pt-4">
+        <div class="col-lg-6">
+            <p class="mb-2 text-center text-lg-start">QH store . Hân hạnh được phục vụ quý khách <a
+                    href="https://www.facebook.com/duong10032004?locale=vi_VN"><span
+                        class="fa fa-brands fa-facebook-f"></span></a>
+            </p>
+        </div>
+
+
+
+    </div>
+</div>
+    <script src="/js/bootstrap.bundle.min.js"></script>
+    <script src="/js/tiny-slider.js"></script>
+    <script src="/js/custom.js"></script>
+
+    <script>
+        let registeredEmail = '';
+        let registeredPassword = '';
+
+        document.getElementById('show-register-form').addEventListener('click', function () {
+            document.getElementById('login-form').style.display = 'none';
+            document.getElementById('register-form').style.display = 'block';
+        });
+
+        document.getElementById('show-login-form').addEventListener('click', function () {
+            document.getElementById('register-form').style.display = 'none';
+            document.getElementById('login-form').style.display = 'block';
+        });
+
+        // Xử lý đăng ký
+        document.getElementById('register-form').addEventListener('submit', function (event) {
+            event.preventDefault();
+
+            const password = document.getElementById('password-register').value;
+            const confirmPassword = document.getElementById('password-confirm').value;
+            const email = document.getElementById('email-register').value;
+            const message = document.getElementById('message1');
+
+            if (password !== confirmPassword) {
+                message.textContent = 'Passwords do not match. Please try again.';
+            } else {
+                message.textContent = 'Registration successful! Redirecting to login...';
+                message.style.color = 'green';
+
+                // Lưu dữ liệu đăng ký
+                registeredEmail = email;
+                registeredPassword = password;
+
+                setTimeout(function () {
+                    document.getElementById('register-form').style.display = 'none';
+                    document.getElementById('login-form').style.display = 'block';
+                    message.textContent = '';
+                }, 2000);
+            }
+        });
+
+        // Xử lý đăng nhập
+        document.getElementById('login-form').addEventListener('submit', function (event) {
+            event.preventDefault();
+
+            const email = document.getElementById('email').value;
+            const password = document.getElementById('password').value;
+            const message = document.getElementById('message');
+
+            // Kiểm tra dữ liệu đăng nhập
+            if (email === registeredEmail && password === registeredPassword) {
+                message.textContent = 'Login successful! Redirecting...';
+                message.style.color = 'green';
+
+                setTimeout(function () {
+                    window.location.href = 'index.html'; // Đường dẫn đến trang tiếp theo sau khi đăng nhập
+                }, 2000);
+            } else {
+                message.textContent = 'Invalid email or password. Please try again.';
+            }
+        });
+    </script>
+
+</body>
+
+</html>
